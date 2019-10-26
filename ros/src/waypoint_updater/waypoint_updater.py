@@ -74,7 +74,7 @@ class WaypointUpdater(object):
 
         if val > 0:
             closest_idx = (closest_idx + 1) % len(self.waypoints_2d)
-        rerturn closest_idx
+        return closest_idx
 
     def publish_waypoint(self, closest_idx):
         lane = Lane()
